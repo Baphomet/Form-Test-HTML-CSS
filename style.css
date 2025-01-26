@@ -11,33 +11,76 @@
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255); 
 }
-
-.t2-left, .t2-right {
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
+    
+.container .custom .t2-r{
+    width: 50%;
+    float: right;
+    margin-top: 2%;
 }
 
-.t2-l, .t2-r {
-    display: flex;
-    flex-direction: row;
-    gap: 20px; 
+.container .custom .t2-r label {
+    font-size: 16px;
+    font-weight: 900;
 }
 
-.t2-l label, .t2-r label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.t2-r input, .t2-l input {
-    width: 100%;
-    background-color: transparent;
+.container .custom .t2-r input {
+    width: 98%;
+    height: 30px;
     border: 3px solid rgb(0, 255, 13);
+    background-color: transparent;
     border-radius: 4px;
     color: azure;
+    padding-left: 5px;
+    font-family: Roboto-Regular;
+}
+.container .custom .t2-r input:active {
+    border: 1px solid rgb(0, 255, 13);
+    border-radius: 4px;
+    background-color: rgb(31, 63, 34);
+    outline: none;
+}
+.container .custom .t2-r input:focus {
+    border: 1px solid rgb(0, 255, 13);
+    border-radius: 4px;
+    background-color: rgb(31, 63, 34);
+    outline: none;
+}
+    
+.container .custom .t2-l{
+    width: 50%;
+    float: right;
+    margin-top: 2%;
 }
 
-.t2-left input:hover, .t2-right input:hover {
+.container .custom .t2-l label {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.container .custom .t2-l input {
+    width: 98%;
+    height: 30px;
+    border: 3px solid rgb(0, 255, 13);
+    background-color: transparent;
+    border-radius: 4px;
+    color: azure;
+    padding-left: 5px;
+    font-family: Roboto-Regular;
+}
+.container .custom .t2-l input:active {
+    border: 1px solid rgb(0, 255, 13);
+    border-radius: 4px;
+    background-color: rgb(31, 63, 34);
+    outline: none;
+}
+.container .custom .t2-l input:focus {
+    border: 1px solid rgb(0, 255, 13);
+    border-radius: 4px;
+    background-color: rgb(31, 63, 34);
+    outline: none;
+}
+
+.t2-l input:hover, .t2-l input:hover {
     background-color: rgb(31, 63, 34); 
 }
 
@@ -46,7 +89,7 @@
     width: 130px;
     height: 50px;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 50%);
     color: aliceblue;
